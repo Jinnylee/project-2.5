@@ -31,11 +31,11 @@ $(document).ready(function () {
   });
 
   $('#signout-btn').on('click', function(){
-    $.auth.signOut();
-  }).then(function(resp){
-    console.log(resp);
-  }).fail(function(resp){
-    console.log(resp);
+    $.auth.signOut().then(function(resp){
+      console.log(resp);
+    }).fail(function(resp){
+      console.log(resp);
+    });
   });
 
 

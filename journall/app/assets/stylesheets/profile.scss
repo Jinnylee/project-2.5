@@ -1,3 +1,56 @@
 // Place all the styles related to the profile controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.entries {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#profile-page {
+  background-color: white;
+  opacity: 0.8;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+.createB {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#favorite {
+  margin-top: 37px;
+  margin-left: 20px;
+}
+
+.text {
+  text-align: left;
+}
+
+#entryInput {
+  border: 1px solid #ddd;
+}
+
+
+#userInformation{
+  text-align: center;
+  font: white;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+#userPostsFavorites {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#edit-journal {
+  border: 1px solid #ddd;
+}
+
+.deletePost {
+  margin-bottom: 10px;
+}

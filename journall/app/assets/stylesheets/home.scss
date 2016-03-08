@@ -10,6 +10,43 @@ body {
   font-size: 15px;
 }
 
+.navbar {
+  border-radius: 2px;
+}
+
+.navbar-brand {
+  font-size: 40px;
+}
+
+.searchTags {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 2px;
+  margin-left:3px;
+}
+
+.searchSubmit {
+  font-size: 15px;
+  border-radius: 2px;
+}
+
+#userlink {
+  font-size: 15px;
+}
+
+.sign {
+  margin-top: 8px;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+#signout-btn {
+  margin-top: 8px;
+  margin-right: 20px;
+  font-size: 15px;
+  border-radius: 2px;
+}
+
 .popularUser {
   float: right;
   background-color: white;

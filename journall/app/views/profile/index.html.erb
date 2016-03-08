@@ -1,1 +1,110 @@
-<h1>Profile Page</h1>
+  <div class="mainarea">
+    <div class="container-fluid">
+      <div id="profile-page" class="col-md-8 col-sm-12 col-md-offset-2">
+
+      <div class="row">
+        <div id="userInformation" class="col-xs-12">
+          <h1><%= current_user.username %></h1>
+          <h4>Likes: <%= @current_user.likes %></h4>
+          <h4> Journal entries: <%= @current_user.entries %></h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="createB col-xs-12">
+          <button class ="btn btn-default" data-toggle="modal" data-target="#create-modal">Create Journal</button>
+        </div>
+      </div>
+
+      <div class="row lastrow">
+        <div id="ownEntry" class="col-xs-12"></div>
+      </div>
+
+      <div class="row">
+        <div id="userPostsFavorites" class="col-xs-12"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="ownMostRecent"></div>
+
+<!-- modal for showing individual post-->
+<div class="modal fade" id="viewOwnPost" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title title"></h4>
+      </div>
+      <div class="modal-body">
+        <p class="body"></p>
+      </div>
+      <div class="modal-footer">
+        <div id="delete-form-message"></div>
+        <div class="foot">
+          <button type="button" class="btn btn-default editPost"><i class="fa fa-pencil-square-o"></i> Edit</button>
+          <button type="button" class="btn btn-default deletePost"><i class="fa fa-trash-o"></i> Delete</button>
+          <div id="favorite-form-message"></div>
+          <button type="button" class="btn btn-default like"><i class="fa fa-heart"></i> Favorite</button>
+          <button type="button" class="btn btn-default closeOne" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- modal to create journal -->
+<div class="modal fade" id="create-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Create Journal</h4>
+        </div>
+        <div class="modal-body">
+          <div id="createJournal-page">
+
+            <form id="createJournal">
+              <p><input type="text" name="title" maxlength="35" size="62" placeholder="title"></p>
+              <p><input type="text" name="tags" size="62" placeholder="tags (separate by comma)"></p>
+              <p><textarea id="entryInput" rows="20" cols="61" placeholder="Write your journal here..."></textarea></p>
+              <p><input type="submit" name="create journal" class="btn btn-default"></p>
+            </form>
+
+            <div id="create-form-message"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- edit modal//not yet showing the actual journal that needs to be edited -->
+<div class="modal fade" id="edit-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Edit Journal</h4>
+        </div>
+        <div class="modal-body">
+          <div id="editJournal-page">
+
+            <form id="editJournal">
+              <p>Title: <br><input type="text" id="edit-title" name="title" maxlength="35" size="62" placeholder="title"></p>
+              <p>Tags: <br><input type="text" id="edit-tags" name="tags" size="62" placeholder="tags (separate by comma)"></p>
+              <p>Journal: <br><textarea id="edit-journal" rows="20" cols="61" placeholder="Write your journal here..."></textarea></p>
+              <p><input type="submit" name="edit journal" class="btn btn-default"></p>
+            </form>
+
+            <div id="edit-form-message"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>

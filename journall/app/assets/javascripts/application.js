@@ -16,7 +16,7 @@
 //= require jquery-cookie/jquery.cookie.js
 //= require pubsub-js/src/pubsub.js
 //= require j-toker/dist/jquery.j-toker.js
-//= require twitter/bootstrap
+//= require bootstrap/dist/js/bootstrap.js
 //= require_tree .
 
 $.auth.configure({
