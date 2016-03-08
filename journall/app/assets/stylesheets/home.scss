@@ -1,0 +1,100 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: 'Quicksand', Times, serif;
+  background-image: url('typewriter_copy.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  font-size: 15px;
+}
+
+.popularUser {
+  float: right;
+  background-color: white;
+  opacity: 0.8;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-bottom:10px;
+  text-align: center;
+  text-decoration-style: bold;
+}
+
+/*.popularUser {
+  background-color: yellow;
+  float: right;
+  height: 280px;
+  position: inline-block;
+  border: 15px solid white;
+  border-radius: 20px;
+  padding: 10px;
+}*/
+
+.error{
+  font: 30px black;
+  font-family: 'Quicksand', serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.userEnter {
+  padding: 2px;
+}
+
+.mainarea {
+  background-color: white;
+  opacity: 0.8;
+  margin-top: 40px;
+}
+
+.recentArea {
+  margin-bottom: 20px;
+}
+
+#favorite {
+  margin-top: 37px;
+  margin-left: 20px;
+}
+
+.text {
+  text-align: left;
+}
+
+.entries {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.popularposts {
+  border: 0;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.users {
+  text-align: left;
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+
+#linkcolor {
+  font: #ddd;
+}
+
+#topuserpage {
+  pointer-events: none
+}
+
+.view-btn {
+  border-radius: 2px;
+}
